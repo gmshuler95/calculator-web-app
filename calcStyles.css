@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: "Spartan", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr 6fr;
+    row-gap: 1rem;
+    width: 16rem;
+}
+
+.container > div {
+    border-radius: 10px;
+}
+
+.title-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: hsl(30, 25%, 89%);
+}
+
+.displayBox {
+    display: flex;
+    justify-content: flex-end;
+    color: hsl(30, 25%, 89%);
+    background-color: hsl(223, 31%, 20%);
+    padding-right: 12px;
+    align-items: center;
+}
+
+.buttonsBox {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 25px 15px;
+}
+button {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    height: 2rem;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 60px;
+    border: none;
+}
+
+.reset {
+    grid-column: 1 / span 2;
+    text-transform: uppercase;
+    background-color: hsl(225, 21%, 49%);
+}
+.equal {
+    grid-column: 3 / span 2;
+    background-color: hsl(6, 63%, 50%);
+}
+.delete {
+    background-color: hsl(225, 21%, 49%) !important;
+}
+
+.delete,
+.equal,
+.reset {
+    color: white;
+    font-size: 12px;
+}
+
+.attribution {
+    margin-top: 1rem;
+}
+span {
+    color: red;
+}

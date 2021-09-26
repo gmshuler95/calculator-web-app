@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/defaultStyles.css" />
+        
+
+        <title>Frontend Mentor | Calculator app</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title-level">
+                <h3 class="calc">calc</h3>
+            </div>
+
+            <div class="displayBox">
+                <h1 class="numDisplay"></h1>
+            </div>
+            <div class="buttonsBox">
+                <button class="seven numBut" type="button">7</button>
+                <button class="numBut" type="button">8</button>
+                <button class="numBut" type="button">9</button>
+                <button class="delete" type="button">DEL</button>
+                <button class="numBut" type="button">4</button>
+                <button class="numBut" type="button">5</button>
+                <button class="numBut" type="button">6</button>
+                <button class="operBut" name="plus" type="button">+</button>
+                <button class="numBut" type="button">1</button>
+                <button class="numBut" type="button">2</button>
+                <button class="numBut" type="button">3</button>
+                <button class="operBut" name="subt" type="button">-</button>
+                <button class="numBut" type="button">.</button>
+                <button class="numBut" type="button">0</button>
+                <button class="operBut" name="divide" type="button">/</button>
+                <button class="operBut" name="mult" type="button">*</button>
+                <button class="reset" type="button">Reset</button>
+                <button class="equal" type="button">=</button>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a>.
+                Coded by <span class="myName">Gavin Shuler</span>.
+        </div>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+</html>
