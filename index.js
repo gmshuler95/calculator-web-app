@@ -62,4 +62,42 @@ $(".equal").on("click",function(event){
     $(".numDisplay").text(result);
 });
 
+$(".theme-slider").on("change", function(event){
+    console.log("changeee!!");
+    console.log(this.value);
+    switch(this.value){
+        case "1":
+            console.log("case 1");
+            $("body").removeClass("theme2-bodyColor");
+            $("body").removeClass("theme3-bodyColor");
+            break;
+        case "2":
+            console.log("case 2");
+            $("body").removeClass("theme3-bodyColor");
+            $("body").addClass("theme2-bodyColor");
+            break;
+        case "3":
+            console.log("case 3");
+            $("body").removeClass("theme2-bodyColor");
+            $("body").addClass("theme3-bodyColor");
+            break;
+        default:
+            console.log("default");
+            break;
+    }
+});
 
+$("body").keydown(function(event){
+    console.log("keydown");
+    console.log(event.key);
+    if(event.key=="Delete"){
+        
+    } else if(event.key=="Enter"){
+
+    } else if (event.key=="Escape"){
+
+    } else if (Number(event.key)) {
+        console.log("i'm a number");
+    }
+
+});

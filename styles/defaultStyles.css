@@ -79,10 +79,32 @@ button {
 .attribution {
     margin-top: 1rem;
 }
-
-.theme-bar{
-    visibility: hidden;
-}
 .myName{
     color: hsl(33, 4%, 51%);
 }
+
+.theme-bar{
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8px;
+    position: relative;
+}
+
+input[type="range"]{
+    width: 35%;
+    background-color: red;
+}
+
+.theme-text {
+    position: absolute;
+    right: 35px;
+    top: 3px;
+}
+.theme-num{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
